@@ -69,5 +69,5 @@ Future<Response> _delete(RequestContext context, String id) async {
   final service = context.read<LinksDataSource>();
   final link = await service.delete(int.parse(id));
 
-  return Response.json(body: link);
+  return Response.json(statusCode: 202, body: link);
 }

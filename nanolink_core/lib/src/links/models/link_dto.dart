@@ -16,6 +16,15 @@ class LinkDto with _$LinkDto {
   factory LinkDto.fromJson(Map<String, dynamic> json) =>
       _$LinkDtoFromJson(json);
 
+  @visibleForTesting
+  factory LinkDto.mock() {
+    return LinkDto(
+      id: 1,
+      link: 'link',
+      shortLink: 'shortLink',
+      createdAt: DateTime(1995),
+    );
+  }
   static const immutableFields = ['id', 'created_at', 'short_link'];
   static const tableName = 'links';
 }
