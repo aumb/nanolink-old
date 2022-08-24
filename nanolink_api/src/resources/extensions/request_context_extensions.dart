@@ -35,6 +35,8 @@ extension RequestContextX on RequestContext {
 
     return ValidationResponse(body, isValid, invalidKeys);
   }
+
+  String? get authorizationHeader => request.headers['Authorization'];
 }
 
 class KeyRule<T> {

@@ -1,10 +1,12 @@
 import 'package:dart_frog/dart_frog.dart';
 import 'package:nanolink_core/nanolink_core.dart';
 
+import '../../features/auth/handlers/auth_error_handler.dart';
 import '../../features/links/handlers/links_error_handler.dart';
 
 class ErrorHandler with ErrorMixin {
   final _linksErrorHandler = LinksErrorHandler();
+  final _authErrorHandler = AuthErrorHandler();
 
   Response handle(Object e) {
     // ignore: avoid_print
@@ -12,6 +14,8 @@ class ErrorHandler with ErrorMixin {
 
     if (e is LinksException) {
       return _linksErrorHandler.handle(e);
+    } else if (e is AuthException) {
+      return _authErrorHandler.handle(e);
     } else {
       return errorResponse(
         const ResponseError(

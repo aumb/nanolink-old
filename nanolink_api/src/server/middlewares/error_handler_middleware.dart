@@ -4,7 +4,7 @@ import '../handlers/error_handler.dart';
 
 final _errorHandler = ErrorHandler();
 
-Middleware errorHandler() => (innerHandler) {
+Middleware errorHandlerMiddleware() => (innerHandler) {
       return (request) {
         return Future.sync(() => innerHandler(request)).then(
           (response) {
