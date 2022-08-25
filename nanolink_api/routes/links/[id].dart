@@ -27,8 +27,8 @@ FutureOr<Response> onRequest(RequestContext context, String id) {
 ///--url http://localhost:8080/links/1
 ///```
 Future<Response> _get(RequestContext context, String id) async {
-  final service = context.read<LinksDataSource>();
-  final link = await service.get(int.parse(id));
+  final dataSource = context.read<LinksDataSource>();
+  final link = await dataSource.get(int.parse(id));
 
   return Response.json(body: link);
 }
@@ -52,8 +52,8 @@ Future<Response> _update(RequestContext context, String id) async {
   );
 
   if (validator.item2) {
-    final service = context.read<LinksDataSource>();
-    final link = await service.update(int.parse(id), validator.item1);
+    final dataSource = context.read<LinksDataSource>();
+    final link = await dataSource.update(int.parse(id), validator.item1);
 
     return Response.json(body: link);
   } else {
@@ -66,8 +66,8 @@ Future<Response> _update(RequestContext context, String id) async {
 ///  --url http://localhost:8080/links/10
 ///```
 Future<Response> _delete(RequestContext context, String id) async {
-  final service = context.read<LinksDataSource>();
-  final link = await service.delete(int.parse(id));
+  final dataSource = context.read<LinksDataSource>();
+  final link = await dataSource.delete(int.parse(id));
 
   return Response.json(statusCode: 202, body: link);
 }

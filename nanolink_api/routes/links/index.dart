@@ -26,8 +26,8 @@ FutureOr<Response> onRequest(RequestContext context) async {
 ///--url http://localhost:8080/links
 ///```
 Future<Response> _get(RequestContext context) async {
-  final service = context.read<LinksDataSource>();
-  final links = await service.getAll();
+  final dataSource = context.read<LinksDataSource>();
+  final links = await dataSource.getAll();
 
   return Response.json(body: links);
 }
@@ -51,8 +51,10 @@ Future<Response> _create(RequestContext context) async {
   );
 
   if (validator.item2) {
-    final service = context.read<LinksDataSource>();
-    final createdLink = await service.create(validator.item1);
+    final dataSource = context.read<LinksDataSource>();
+    final link = CreateLinkDto.fromJson(validator.item1);
+    final createdLink =
+        await dataSource.create(link, context.authorizationHeader);
 
     return Response.json(statusCode: 201, body: createdLink);
   } else {

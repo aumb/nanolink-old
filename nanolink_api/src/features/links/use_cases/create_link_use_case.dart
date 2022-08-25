@@ -1,28 +1,32 @@
 import 'package:nanolink_core/nanolink_core.dart';
 import 'package:shortid/shortid.dart';
-import 'package:supabase/supabase.dart';
-
-import '../../../resources/extensions/map_extensions.dart';
+import 'package:supabase/supabase.dart' hide User;
 
 class CreateLinkUseCase {
-  CreateLinkUseCase(this._client);
+  CreateLinkUseCase(
+    this._client,
+  );
 
   final SupabaseClient _client;
 
-  Future<LinkDto> run(Map<String, dynamic> link) async {
-    final linkDtoMap = link.removeAll(LinkDto.immutableFields);
-    if ((linkDtoMap['link'] as String).isEmpty) {
+  Future<LinkDto> run(CreateLinkDto createLinkDto, User? user) async {
+    final shouldThrow = createLinkDto.link.isEmpty || user == null;
+
+    if (shouldThrow) {
       throw const LinksException.linkMissingOrInvalidBodyParams();
     }
-    linkDtoMap['short_link'] = shortid.generate();
+
+    final shortLink = shortid.generate();
+    final linkDtoMap = createLinkDto.toJson();
+    linkDtoMap['short_link'] = shortLink;
+    linkDtoMap['user_id'] = user.id;
 
     final response = await _client
         .from(LinkDto.tableName)
         .insert(linkDtoMap)
         .execute()
         .catchError(
-          (Object e, StackTrace s) =>
-              throw const LinksException.createLinkException(),
+          (_) => throw const LinksException.createLinkException(),
         );
     final data = List<Map<String, dynamic>>.from(response.data as List? ?? []);
 

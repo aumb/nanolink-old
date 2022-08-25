@@ -1,11 +1,11 @@
 import 'package:dart_frog/dart_frog.dart';
 import 'package:nanolink_core/nanolink_core.dart';
 
-Middleware authHandlerMiddleware() => (innerHandler) {
+Middleware authHandlerMiddleware({bool isOptional = false}) => (innerHandler) {
       return (requestCtx) {
         final token = requestCtx.request.headers['Authorization'];
 
-        if (token == null) {
+        if (token?.isEmpty ?? !isOptional) {
           throw const AuthException.unauthorized();
         }
 

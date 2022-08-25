@@ -44,8 +44,8 @@ Future<Response> _post(RequestContext context) async {
   );
 
   if (validator.item2) {
-    final service = context.read<AuthDataSource>();
-    final tokens = await service.emailAndPasswordSignIn(
+    final dataSource = context.read<AuthDataSource>();
+    final tokens = await dataSource.emailAndPasswordSignIn(
       validator.item1['email'] as String,
       validator.item1['password'] as String,
     );

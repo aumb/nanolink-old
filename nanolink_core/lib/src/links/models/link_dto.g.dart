@@ -11,12 +11,23 @@ _$_LinkDto _$$_LinkDtoFromJson(Map<String, dynamic> json) => _$_LinkDto(
       link: json['link'] as String,
       shortLink: json['short_link'] as String,
       createdAt: DateTime.parse(json['created_at'] as String),
+      userId: json['user_id'] as String?,
     );
 
-Map<String, dynamic> _$$_LinkDtoToJson(_$_LinkDto instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'link': instance.link,
-      'short_link': instance.shortLink,
-      'created_at': instance.createdAt.toIso8601String(),
-    };
+Map<String, dynamic> _$$_LinkDtoToJson(_$_LinkDto instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'link': instance.link,
+    'short_link': instance.shortLink,
+    'created_at': instance.createdAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('user_id', instance.userId);
+  return val;
+}

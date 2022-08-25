@@ -5,12 +5,13 @@ part 'link_dto.g.dart';
 
 @freezed
 class LinkDto with _$LinkDto {
-  @JsonSerializable(fieldRename: FieldRename.snake)
+  @JsonSerializable(fieldRename: FieldRename.snake, includeIfNull: false)
   const factory LinkDto({
     required int id,
     required String link,
     required String shortLink,
     required DateTime createdAt,
+    String? userId,
   }) = _LinkDto;
 
   factory LinkDto.fromJson(Map<String, dynamic> json) =>

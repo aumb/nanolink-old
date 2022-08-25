@@ -24,6 +24,7 @@ mixin _$LinkDto {
   String get link => throw _privateConstructorUsedError;
   String get shortLink => throw _privateConstructorUsedError;
   DateTime get createdAt => throw _privateConstructorUsedError;
+  String? get userId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -34,7 +35,12 @@ mixin _$LinkDto {
 abstract class $LinkDtoCopyWith<$Res> {
   factory $LinkDtoCopyWith(LinkDto value, $Res Function(LinkDto) then) =
       _$LinkDtoCopyWithImpl<$Res>;
-  $Res call({int id, String link, String shortLink, DateTime createdAt});
+  $Res call(
+      {int id,
+      String link,
+      String shortLink,
+      DateTime createdAt,
+      String? userId});
 }
 
 /// @nodoc
@@ -51,6 +57,7 @@ class _$LinkDtoCopyWithImpl<$Res> implements $LinkDtoCopyWith<$Res> {
     Object? link = freezed,
     Object? shortLink = freezed,
     Object? createdAt = freezed,
+    Object? userId = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
@@ -69,6 +76,10 @@ class _$LinkDtoCopyWithImpl<$Res> implements $LinkDtoCopyWith<$Res> {
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
+      userId: userId == freezed
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -79,7 +90,12 @@ abstract class _$$_LinkDtoCopyWith<$Res> implements $LinkDtoCopyWith<$Res> {
           _$_LinkDto value, $Res Function(_$_LinkDto) then) =
       __$$_LinkDtoCopyWithImpl<$Res>;
   @override
-  $Res call({int id, String link, String shortLink, DateTime createdAt});
+  $Res call(
+      {int id,
+      String link,
+      String shortLink,
+      DateTime createdAt,
+      String? userId});
 }
 
 /// @nodoc
@@ -97,6 +113,7 @@ class __$$_LinkDtoCopyWithImpl<$Res> extends _$LinkDtoCopyWithImpl<$Res>
     Object? link = freezed,
     Object? shortLink = freezed,
     Object? createdAt = freezed,
+    Object? userId = freezed,
   }) {
     return _then(_$_LinkDto(
       id: id == freezed
@@ -115,19 +132,24 @@ class __$$_LinkDtoCopyWithImpl<$Res> extends _$LinkDtoCopyWithImpl<$Res>
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
+      userId: userId == freezed
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
 /// @nodoc
 
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable(fieldRename: FieldRename.snake, includeIfNull: false)
 class _$_LinkDto implements _LinkDto {
   const _$_LinkDto(
       {required this.id,
       required this.link,
       required this.shortLink,
-      required this.createdAt});
+      required this.createdAt,
+      this.userId});
 
   factory _$_LinkDto.fromJson(Map<String, dynamic> json) =>
       _$$_LinkDtoFromJson(json);
@@ -140,10 +162,12 @@ class _$_LinkDto implements _LinkDto {
   final String shortLink;
   @override
   final DateTime createdAt;
+  @override
+  final String? userId;
 
   @override
   String toString() {
-    return 'LinkDto(id: $id, link: $link, shortLink: $shortLink, createdAt: $createdAt)';
+    return 'LinkDto(id: $id, link: $link, shortLink: $shortLink, createdAt: $createdAt, userId: $userId)';
   }
 
   @override
@@ -154,7 +178,8 @@ class _$_LinkDto implements _LinkDto {
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.link, link) &&
             const DeepCollectionEquality().equals(other.shortLink, shortLink) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt));
+            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
+            const DeepCollectionEquality().equals(other.userId, userId));
   }
 
   @JsonKey(ignore: true)
@@ -164,7 +189,8 @@ class _$_LinkDto implements _LinkDto {
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(link),
       const DeepCollectionEquality().hash(shortLink),
-      const DeepCollectionEquality().hash(createdAt));
+      const DeepCollectionEquality().hash(createdAt),
+      const DeepCollectionEquality().hash(userId));
 
   @JsonKey(ignore: true)
   @override
@@ -184,7 +210,8 @@ abstract class _LinkDto implements LinkDto {
       {required final int id,
       required final String link,
       required final String shortLink,
-      required final DateTime createdAt}) = _$_LinkDto;
+      required final DateTime createdAt,
+      final String? userId}) = _$_LinkDto;
 
   factory _LinkDto.fromJson(Map<String, dynamic> json) = _$_LinkDto.fromJson;
 
@@ -196,6 +223,8 @@ abstract class _LinkDto implements LinkDto {
   String get shortLink;
   @override
   DateTime get createdAt;
+  @override
+  String? get userId;
   @override
   @JsonKey(ignore: true)
   _$$_LinkDtoCopyWith<_$_LinkDto> get copyWith =>

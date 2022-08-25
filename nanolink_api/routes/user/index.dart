@@ -4,13 +4,13 @@ import 'dart:io';
 import 'package:dart_frog/dart_frog.dart';
 import 'package:nanolink_core/nanolink_core.dart';
 
-import '../../../src/resources/extensions/request_context_extensions.dart';
+import '../../src/resources/extensions/request_context_extensions.dart';
 
 FutureOr<Response> onRequest(RequestContext context) async {
   switch (context.request.method) {
-    case HttpMethod.post:
-      return _post(context);
     case HttpMethod.get:
+      return _get(context);
+    case HttpMethod.post:
     case HttpMethod.delete:
     case HttpMethod.head:
     case HttpMethod.options:
@@ -21,11 +21,14 @@ FutureOr<Response> onRequest(RequestContext context) async {
 }
 
 ///```
-///curl --request POST \
-///  --url http://localhost:8080/auth/sign_out
+///curl --request GET \
+///--url http://localhost:8080/user
 ///```
-Future<Response> _post(RequestContext context) async {
-  final dataSource = context.read<AuthDataSource>();
-  await dataSource.signOut(context.authorizationHeader!);
-  return Response.json();
+Future<Response> _get(RequestContext context) async {
+  final jwt = context.authorizationHeader!;
+
+  final dataSource = context.read<UserDataSource>();
+  final user = await dataSource.getCurrentUser(jwt);
+
+  return Response.json(body: user);
 }
