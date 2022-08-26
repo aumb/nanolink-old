@@ -8,16 +8,31 @@ environment:
   flutter: 3.0.5
 
 dependencies:
+  auto_route: ^5.0.1
+  auto_route_generator: ^5.0.1
   bloc: ^8.1.0
+  dio: ^4.0.6
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
+  flutter_dotenv: ^5.0.2
   flutter_localizations:
     sdk: flutter
+  freezed: ^2.1.0+1
+  freezed_annotation: ^2.1.0
+  get_it: ^7.2.0
+  injectable: ^1.5.3
+  injectable_generator: ^1.5.4
   intl: ^0.17.0
+  nanolink_core:
+    path: ../nanolink_core
+  pretty_dio_logger: ^1.2.0-beta-1
+  retrofit: ^3.0.1+1
+  retrofit_generator: ^4.0.3+1
 
 dev_dependencies:
   bloc_test: ^9.1.0
+  build_runner: ^2.2.0
   flutter_test:
     sdk: flutter
   mocktail: ^0.3.0
@@ -26,3 +41,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   generate: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - .env

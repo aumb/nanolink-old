@@ -9,5 +9,9 @@ import 'package:nanolink_app/app/app.dart';
 import 'package:nanolink_app/bootstrap.dart';
 
 void main() {
-  bootstrap(() => const App());
+  bootstrap(
+    (router) => App(
+      router: router,
+    ),
+  );
 }

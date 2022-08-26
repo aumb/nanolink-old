@@ -7,15 +7,20 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:nanolink_app/counter/counter.dart';
 import 'package:nanolink_app/l10n/l10n.dart';
+import 'package:nanolink_app/resources/router/app_router.dart';
 
 class App extends StatelessWidget {
-  const App({super.key});
+  const App({
+    super.key,
+    required this.router,
+  });
+
+  final AppRouter router;
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       theme: ThemeData(
         appBarTheme: const AppBarTheme(color: Color(0xFF13B9FF)),
         colorScheme: ColorScheme.fromSwatch(
@@ -27,7 +32,8 @@ class App extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      routerDelegate: router.delegate(),
+      routeInformationParser: router.defaultRouteParser(),
     );
   }
 }

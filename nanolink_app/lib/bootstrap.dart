@@ -10,6 +10,8 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
+import 'package:nanolink_app/resources/dependency_manager/dependecy_manager.dart';
+import 'package:nanolink_app/resources/router/app_router.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override
@@ -25,15 +27,22 @@ class AppBlocObserver extends BlocObserver {
   }
 }
 
-Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
+Future<void> bootstrap(
+  FutureOr<Widget> Function(AppRouter router) builder,
+) async {
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
 
+  await DependecyManager.inject();
+  final _router = AppRouter();
+
   Bloc.observer = AppBlocObserver();
 
   await runZonedGuarded(
-    () async => runApp(await builder()),
+    () async => runApp(
+      await builder(_router),
+    ),
     (error, stackTrace) => log(error.toString(), stackTrace: stackTrace),
   );
 }
