@@ -9,13 +9,11 @@ class AuthException with _$AuthException implements Exception {
       _InvalidEmailOrPassword;
   const factory AuthException.pendingEmailVerification() =
       _PendingEmailVerification;
-  const factory AuthException.emailPasswordSignInException() =
-      _EmailPasswordSignInException;
+  const factory AuthException.emailPasswordSignIn() = _EmailPasswordSignIn;
   const factory AuthException.missingSignInBodyParams() =
       _MissingSignInBodyParams;
   //sign up
-  const factory AuthException.emailPasswordSignUpException() =
-      _EmailPasswordSignUpException;
+  const factory AuthException.emailPasswordSignUp() = _EmailPasswordSignUp;
   const factory AuthException.missingSignUpBodyParams() =
       _MissingSignUpBodyParams;
   const factory AuthException.invalidEmailFormat() = _InvalidEmailFormat;
@@ -24,6 +22,9 @@ class AuthException with _$AuthException implements Exception {
 
   //sign out
   const factory AuthException.signOutException() = _SignOutException;
+
+  //refresh token
+  const factory AuthException.refreshToken() = _RefreshToken;
 
   //other
   const factory AuthException.timedout() = _TimedOut;

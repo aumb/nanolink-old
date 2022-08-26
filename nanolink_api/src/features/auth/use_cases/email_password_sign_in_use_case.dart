@@ -7,7 +7,6 @@ class EmailPasswordSignInUseCase {
   final SupabaseClient _client;
 
   Future<Tokens> run(String email, String password) async {
-    // TODO(aumb): add forgot password and refresh token endpoint
     try {
       final result = await _client.auth.api.signInWithEmail(email, password);
 
@@ -18,12 +17,12 @@ class EmailPasswordSignInUseCase {
           case 'Email not confirmed':
             throw const AuthException.pendingEmailVerification();
           default:
-            throw const AuthException.emailPasswordSignInException();
+            throw const AuthException.emailPasswordSignIn();
         }
       }
 
       if (result.data == null) {
-        throw const AuthException.emailPasswordSignInException();
+        throw const AuthException.emailPasswordSignIn();
       }
 
       return Tokens(
@@ -33,7 +32,7 @@ class EmailPasswordSignInUseCase {
     } on AuthException catch (_) {
       rethrow;
     } catch (e) {
-      throw const AuthException.emailPasswordSignInException();
+      throw const AuthException.emailPasswordSignIn();
     }
   }
 }

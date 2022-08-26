@@ -26,14 +26,14 @@ class EmailPasswordSignUpUseCase {
                 .contains('you can only request this after')) {
               throw const AuthException.timedout();
             } else {
-              throw const AuthException.emailPasswordSignUpException();
+              throw const AuthException.emailPasswordSignUp();
             }
         }
       }
     } on AuthException catch (_) {
       rethrow;
     } catch (e) {
-      throw const AuthException.emailPasswordSignUpException();
+      throw const AuthException.emailPasswordSignUp();
     }
   }
 }

@@ -10,23 +10,29 @@ class CreateLinkUseCase {
   final SupabaseClient _client;
 
   Future<LinkDto> run(CreateLinkDto createLinkDto, User? user) async {
-    final shouldThrow = createLinkDto.link.isEmpty || user == null;
+    final _urlRegex = RegExp(
+      r'^(?:http|https):\/\/[\w\-_]+(?:\.[\w\-_]+)+[\w\-.,@?^=%&:/~\\+#]*$',
+    );
+    final shouldThrow = createLinkDto.link.isEmpty ||
+        !_urlRegex.hasMatch(
+          createLinkDto.link,
+        );
 
     if (shouldThrow) {
       throw const LinksException.linkMissingOrInvalidBodyParams();
     }
 
-    final shortLink = shortid.generate();
     final linkDtoMap = createLinkDto.toJson();
+    if (user != null) linkDtoMap['user_id'] = user.id;
+    final shortLink = shortid.generate();
     linkDtoMap['short_link'] = shortLink;
-    linkDtoMap['user_id'] = user.id;
 
     final response = await _client
         .from(LinkDto.tableName)
         .insert(linkDtoMap)
         .execute()
         .catchError(
-          (_) => throw const LinksException.createLinkException(),
+          (_) => throw const LinksException.createLink(),
         );
     final data = List<Map<String, dynamic>>.from(response.data as List? ?? []);
 
@@ -36,10 +42,10 @@ class CreateLinkUseCase {
 
         return link;
       } catch (_) {
-        throw const LinksException.linkDeserializationException();
+        throw const LinksException.linkDeserialization();
       }
     } else {
-      throw const LinksException.createLinkException();
+      throw const LinksException.createLink();
     }
   }
 }

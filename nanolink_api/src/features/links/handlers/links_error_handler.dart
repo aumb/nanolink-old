@@ -6,63 +6,63 @@ import '../../../server/handlers/error_handler.dart';
 class LinksErrorHandler with ErrorMixin {
   Response handle(LinksException e) {
     return e.when<Response>(
-      getLinksException: () => errorResponse(
+      getLinks: () => errorResponse(
         const ResponseError(
           code: ErrorCode.internalServerError,
           statusCode: 500,
         ),
       ),
-      linksDeserializationException: () => errorResponse(
+      linksDeserialization: () => errorResponse(
         const ResponseError(
           code: ErrorCode.parsingError,
           statusCode: 400,
         ),
       ),
-      getLinkException: () => errorResponse(
+      getLink: () => errorResponse(
         const ResponseError(
           code: ErrorCode.internalServerError,
           statusCode: 500,
         ),
       ),
-      updateLinkException: () => errorResponse(
+      updateLink: () => errorResponse(
         const ResponseError(
           code: ErrorCode.internalServerError,
           statusCode: 500,
         ),
       ),
-      createLinkException: () => errorResponse(
+      createLink: () => errorResponse(
         const ResponseError(
           code: ErrorCode.internalServerError,
           statusCode: 500,
         ),
       ),
-      deleteLinkException: () => errorResponse(
+      deleteLink: () => errorResponse(
         const ResponseError(
           code: ErrorCode.internalServerError,
           statusCode: 500,
         ),
       ),
-      linkDoesNotExistException: () => errorResponse(
+      linkDoesNotExist: () => errorResponse(
         const ResponseError(
           code: ErrorCode.internalServerError,
           statusCode: 400,
         ),
       ),
-      linkDeserializationException: () => errorResponse(
+      linkDeserialization: () => errorResponse(
         const ResponseError(
           code: ErrorCode.parsingError,
           statusCode: 400,
         ),
       ),
-      linkUnsafeException: () => errorResponse(
+      linkUnsafe: () => errorResponse(
         const ResponseError(
-          code: ErrorCode.unsafeLink,
+          code: ErrorCode.unsafeLinkError,
           statusCode: 400,
         ),
       ),
       linkMissingOrInvalidBodyParams: () => errorResponse(
         const ResponseError(
-          code: ErrorCode.missingOrInvalidBodyParams,
+          code: ErrorCode.missingOrInvalidBodyParamsError,
           statusCode: 400,
         ),
       ),

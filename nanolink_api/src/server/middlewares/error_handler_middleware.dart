@@ -11,6 +11,10 @@ Middleware errorHandlerMiddleware() => (innerHandler) {
             return response;
           },
           onError: (Object e, StackTrace stackTrace) {
+            // ignore: avoid_print
+            print(e);
+            // ignore: avoid_print
+            print(stackTrace);
             return _errorHandler.handle(e);
           },
         );

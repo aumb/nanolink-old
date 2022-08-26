@@ -20,14 +20,15 @@ mixin _$AuthException {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) =>
@@ -36,14 +37,15 @@ mixin _$AuthException {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) =>
@@ -52,14 +54,15 @@ mixin _$AuthException {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -71,12 +74,10 @@ mixin _$AuthException {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -84,6 +85,7 @@ mixin _$AuthException {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) =>
@@ -92,16 +94,15 @@ mixin _$AuthException {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) =>
@@ -110,16 +111,15 @@ mixin _$AuthException {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
@@ -189,14 +189,15 @@ class _$_InvalidEmailOrPassword implements _InvalidEmailOrPassword {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
@@ -208,14 +209,15 @@ class _$_InvalidEmailOrPassword implements _InvalidEmailOrPassword {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
@@ -227,14 +229,15 @@ class _$_InvalidEmailOrPassword implements _InvalidEmailOrPassword {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -252,12 +255,10 @@ class _$_InvalidEmailOrPassword implements _InvalidEmailOrPassword {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -265,6 +266,7 @@ class _$_InvalidEmailOrPassword implements _InvalidEmailOrPassword {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
@@ -276,16 +278,15 @@ class _$_InvalidEmailOrPassword implements _InvalidEmailOrPassword {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
@@ -297,16 +298,15 @@ class _$_InvalidEmailOrPassword implements _InvalidEmailOrPassword {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
@@ -368,14 +368,15 @@ class _$_PendingEmailVerification implements _PendingEmailVerification {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
@@ -387,14 +388,15 @@ class _$_PendingEmailVerification implements _PendingEmailVerification {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
@@ -406,14 +408,15 @@ class _$_PendingEmailVerification implements _PendingEmailVerification {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -431,12 +434,10 @@ class _$_PendingEmailVerification implements _PendingEmailVerification {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -444,6 +445,7 @@ class _$_PendingEmailVerification implements _PendingEmailVerification {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
@@ -455,16 +457,15 @@ class _$_PendingEmailVerification implements _PendingEmailVerification {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
@@ -476,16 +477,15 @@ class _$_PendingEmailVerification implements _PendingEmailVerification {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
@@ -502,42 +502,38 @@ abstract class _PendingEmailVerification implements AuthException {
 }
 
 /// @nodoc
-abstract class _$$_EmailPasswordSignInExceptionCopyWith<$Res> {
-  factory _$$_EmailPasswordSignInExceptionCopyWith(
-          _$_EmailPasswordSignInException value,
-          $Res Function(_$_EmailPasswordSignInException) then) =
-      __$$_EmailPasswordSignInExceptionCopyWithImpl<$Res>;
+abstract class _$$_EmailPasswordSignInCopyWith<$Res> {
+  factory _$$_EmailPasswordSignInCopyWith(_$_EmailPasswordSignIn value,
+          $Res Function(_$_EmailPasswordSignIn) then) =
+      __$$_EmailPasswordSignInCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_EmailPasswordSignInExceptionCopyWithImpl<$Res>
+class __$$_EmailPasswordSignInCopyWithImpl<$Res>
     extends _$AuthExceptionCopyWithImpl<$Res>
-    implements _$$_EmailPasswordSignInExceptionCopyWith<$Res> {
-  __$$_EmailPasswordSignInExceptionCopyWithImpl(
-      _$_EmailPasswordSignInException _value,
-      $Res Function(_$_EmailPasswordSignInException) _then)
-      : super(_value, (v) => _then(v as _$_EmailPasswordSignInException));
+    implements _$$_EmailPasswordSignInCopyWith<$Res> {
+  __$$_EmailPasswordSignInCopyWithImpl(_$_EmailPasswordSignIn _value,
+      $Res Function(_$_EmailPasswordSignIn) _then)
+      : super(_value, (v) => _then(v as _$_EmailPasswordSignIn));
 
   @override
-  _$_EmailPasswordSignInException get _value =>
-      super._value as _$_EmailPasswordSignInException;
+  _$_EmailPasswordSignIn get _value => super._value as _$_EmailPasswordSignIn;
 }
 
 /// @nodoc
 
-class _$_EmailPasswordSignInException implements _EmailPasswordSignInException {
-  const _$_EmailPasswordSignInException();
+class _$_EmailPasswordSignIn implements _EmailPasswordSignIn {
+  const _$_EmailPasswordSignIn();
 
   @override
   String toString() {
-    return 'AuthException.emailPasswordSignInException()';
+    return 'AuthException.emailPasswordSignIn()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_EmailPasswordSignInException);
+        (other.runtimeType == runtimeType && other is _$_EmailPasswordSignIn);
   }
 
   @override
@@ -548,18 +544,19 @@ class _$_EmailPasswordSignInException implements _EmailPasswordSignInException {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
-    return emailPasswordSignInException();
+    return emailPasswordSignIn();
   }
 
   @override
@@ -567,18 +564,19 @@ class _$_EmailPasswordSignInException implements _EmailPasswordSignInException {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
-    return emailPasswordSignInException?.call();
+    return emailPasswordSignIn?.call();
   }
 
   @override
@@ -586,20 +584,21 @@ class _$_EmailPasswordSignInException implements _EmailPasswordSignInException {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
   }) {
-    if (emailPasswordSignInException != null) {
-      return emailPasswordSignInException();
+    if (emailPasswordSignIn != null) {
+      return emailPasswordSignIn();
     }
     return orElse();
   }
@@ -611,12 +610,10 @@ class _$_EmailPasswordSignInException implements _EmailPasswordSignInException {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -624,10 +621,11 @@ class _$_EmailPasswordSignInException implements _EmailPasswordSignInException {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
-    return emailPasswordSignInException(this);
+    return emailPasswordSignIn(this);
   }
 
   @override
@@ -635,20 +633,19 @@ class _$_EmailPasswordSignInException implements _EmailPasswordSignInException {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
-    return emailPasswordSignInException?.call(this);
+    return emailPasswordSignIn?.call(this);
   }
 
   @override
@@ -656,30 +653,28 @@ class _$_EmailPasswordSignInException implements _EmailPasswordSignInException {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
   }) {
-    if (emailPasswordSignInException != null) {
-      return emailPasswordSignInException(this);
+    if (emailPasswordSignIn != null) {
+      return emailPasswordSignIn(this);
     }
     return orElse();
   }
 }
 
-abstract class _EmailPasswordSignInException implements AuthException {
-  const factory _EmailPasswordSignInException() =
-      _$_EmailPasswordSignInException;
+abstract class _EmailPasswordSignIn implements AuthException {
+  const factory _EmailPasswordSignIn() = _$_EmailPasswordSignIn;
 }
 
 /// @nodoc
@@ -727,14 +722,15 @@ class _$_MissingSignInBodyParams implements _MissingSignInBodyParams {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
@@ -746,14 +742,15 @@ class _$_MissingSignInBodyParams implements _MissingSignInBodyParams {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
@@ -765,14 +762,15 @@ class _$_MissingSignInBodyParams implements _MissingSignInBodyParams {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -790,12 +788,10 @@ class _$_MissingSignInBodyParams implements _MissingSignInBodyParams {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -803,6 +799,7 @@ class _$_MissingSignInBodyParams implements _MissingSignInBodyParams {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
@@ -814,16 +811,15 @@ class _$_MissingSignInBodyParams implements _MissingSignInBodyParams {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
@@ -835,16 +831,15 @@ class _$_MissingSignInBodyParams implements _MissingSignInBodyParams {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
@@ -861,42 +856,38 @@ abstract class _MissingSignInBodyParams implements AuthException {
 }
 
 /// @nodoc
-abstract class _$$_EmailPasswordSignUpExceptionCopyWith<$Res> {
-  factory _$$_EmailPasswordSignUpExceptionCopyWith(
-          _$_EmailPasswordSignUpException value,
-          $Res Function(_$_EmailPasswordSignUpException) then) =
-      __$$_EmailPasswordSignUpExceptionCopyWithImpl<$Res>;
+abstract class _$$_EmailPasswordSignUpCopyWith<$Res> {
+  factory _$$_EmailPasswordSignUpCopyWith(_$_EmailPasswordSignUp value,
+          $Res Function(_$_EmailPasswordSignUp) then) =
+      __$$_EmailPasswordSignUpCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_EmailPasswordSignUpExceptionCopyWithImpl<$Res>
+class __$$_EmailPasswordSignUpCopyWithImpl<$Res>
     extends _$AuthExceptionCopyWithImpl<$Res>
-    implements _$$_EmailPasswordSignUpExceptionCopyWith<$Res> {
-  __$$_EmailPasswordSignUpExceptionCopyWithImpl(
-      _$_EmailPasswordSignUpException _value,
-      $Res Function(_$_EmailPasswordSignUpException) _then)
-      : super(_value, (v) => _then(v as _$_EmailPasswordSignUpException));
+    implements _$$_EmailPasswordSignUpCopyWith<$Res> {
+  __$$_EmailPasswordSignUpCopyWithImpl(_$_EmailPasswordSignUp _value,
+      $Res Function(_$_EmailPasswordSignUp) _then)
+      : super(_value, (v) => _then(v as _$_EmailPasswordSignUp));
 
   @override
-  _$_EmailPasswordSignUpException get _value =>
-      super._value as _$_EmailPasswordSignUpException;
+  _$_EmailPasswordSignUp get _value => super._value as _$_EmailPasswordSignUp;
 }
 
 /// @nodoc
 
-class _$_EmailPasswordSignUpException implements _EmailPasswordSignUpException {
-  const _$_EmailPasswordSignUpException();
+class _$_EmailPasswordSignUp implements _EmailPasswordSignUp {
+  const _$_EmailPasswordSignUp();
 
   @override
   String toString() {
-    return 'AuthException.emailPasswordSignUpException()';
+    return 'AuthException.emailPasswordSignUp()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_EmailPasswordSignUpException);
+        (other.runtimeType == runtimeType && other is _$_EmailPasswordSignUp);
   }
 
   @override
@@ -907,18 +898,19 @@ class _$_EmailPasswordSignUpException implements _EmailPasswordSignUpException {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
-    return emailPasswordSignUpException();
+    return emailPasswordSignUp();
   }
 
   @override
@@ -926,18 +918,19 @@ class _$_EmailPasswordSignUpException implements _EmailPasswordSignUpException {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
-    return emailPasswordSignUpException?.call();
+    return emailPasswordSignUp?.call();
   }
 
   @override
@@ -945,20 +938,21 @@ class _$_EmailPasswordSignUpException implements _EmailPasswordSignUpException {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
   }) {
-    if (emailPasswordSignUpException != null) {
-      return emailPasswordSignUpException();
+    if (emailPasswordSignUp != null) {
+      return emailPasswordSignUp();
     }
     return orElse();
   }
@@ -970,12 +964,10 @@ class _$_EmailPasswordSignUpException implements _EmailPasswordSignUpException {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -983,10 +975,11 @@ class _$_EmailPasswordSignUpException implements _EmailPasswordSignUpException {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
-    return emailPasswordSignUpException(this);
+    return emailPasswordSignUp(this);
   }
 
   @override
@@ -994,20 +987,19 @@ class _$_EmailPasswordSignUpException implements _EmailPasswordSignUpException {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
-    return emailPasswordSignUpException?.call(this);
+    return emailPasswordSignUp?.call(this);
   }
 
   @override
@@ -1015,30 +1007,28 @@ class _$_EmailPasswordSignUpException implements _EmailPasswordSignUpException {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
   }) {
-    if (emailPasswordSignUpException != null) {
-      return emailPasswordSignUpException(this);
+    if (emailPasswordSignUp != null) {
+      return emailPasswordSignUp(this);
     }
     return orElse();
   }
 }
 
-abstract class _EmailPasswordSignUpException implements AuthException {
-  const factory _EmailPasswordSignUpException() =
-      _$_EmailPasswordSignUpException;
+abstract class _EmailPasswordSignUp implements AuthException {
+  const factory _EmailPasswordSignUp() = _$_EmailPasswordSignUp;
 }
 
 /// @nodoc
@@ -1086,14 +1076,15 @@ class _$_MissingSignUpBodyParams implements _MissingSignUpBodyParams {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
@@ -1105,14 +1096,15 @@ class _$_MissingSignUpBodyParams implements _MissingSignUpBodyParams {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
@@ -1124,14 +1116,15 @@ class _$_MissingSignUpBodyParams implements _MissingSignUpBodyParams {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -1149,12 +1142,10 @@ class _$_MissingSignUpBodyParams implements _MissingSignUpBodyParams {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -1162,6 +1153,7 @@ class _$_MissingSignUpBodyParams implements _MissingSignUpBodyParams {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
@@ -1173,16 +1165,15 @@ class _$_MissingSignUpBodyParams implements _MissingSignUpBodyParams {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
@@ -1194,16 +1185,15 @@ class _$_MissingSignUpBodyParams implements _MissingSignUpBodyParams {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
@@ -1262,14 +1252,15 @@ class _$_InvalidEmailFormat implements _InvalidEmailFormat {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
@@ -1281,14 +1272,15 @@ class _$_InvalidEmailFormat implements _InvalidEmailFormat {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
@@ -1300,14 +1292,15 @@ class _$_InvalidEmailFormat implements _InvalidEmailFormat {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -1325,12 +1318,10 @@ class _$_InvalidEmailFormat implements _InvalidEmailFormat {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -1338,6 +1329,7 @@ class _$_InvalidEmailFormat implements _InvalidEmailFormat {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
@@ -1349,16 +1341,15 @@ class _$_InvalidEmailFormat implements _InvalidEmailFormat {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
@@ -1370,16 +1361,15 @@ class _$_InvalidEmailFormat implements _InvalidEmailFormat {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
@@ -1439,14 +1429,15 @@ class _$_InvalidPasswordFormat implements _InvalidPasswordFormat {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
@@ -1458,14 +1449,15 @@ class _$_InvalidPasswordFormat implements _InvalidPasswordFormat {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
@@ -1477,14 +1469,15 @@ class _$_InvalidPasswordFormat implements _InvalidPasswordFormat {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -1502,12 +1495,10 @@ class _$_InvalidPasswordFormat implements _InvalidPasswordFormat {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -1515,6 +1506,7 @@ class _$_InvalidPasswordFormat implements _InvalidPasswordFormat {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
@@ -1526,16 +1518,15 @@ class _$_InvalidPasswordFormat implements _InvalidPasswordFormat {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
@@ -1547,16 +1538,15 @@ class _$_InvalidPasswordFormat implements _InvalidPasswordFormat {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
@@ -1615,14 +1605,15 @@ class _$_UserExists implements _UserExists {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
@@ -1634,14 +1625,15 @@ class _$_UserExists implements _UserExists {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
@@ -1653,14 +1645,15 @@ class _$_UserExists implements _UserExists {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -1678,12 +1671,10 @@ class _$_UserExists implements _UserExists {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -1691,6 +1682,7 @@ class _$_UserExists implements _UserExists {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
@@ -1702,16 +1694,15 @@ class _$_UserExists implements _UserExists {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
@@ -1723,16 +1714,15 @@ class _$_UserExists implements _UserExists {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
@@ -1791,14 +1781,15 @@ class _$_SignOutException implements _SignOutException {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
@@ -1810,14 +1801,15 @@ class _$_SignOutException implements _SignOutException {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
@@ -1829,14 +1821,15 @@ class _$_SignOutException implements _SignOutException {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -1854,12 +1847,10 @@ class _$_SignOutException implements _SignOutException {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -1867,6 +1858,7 @@ class _$_SignOutException implements _SignOutException {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
@@ -1878,16 +1870,15 @@ class _$_SignOutException implements _SignOutException {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
@@ -1899,16 +1890,15 @@ class _$_SignOutException implements _SignOutException {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
@@ -1922,6 +1912,182 @@ class _$_SignOutException implements _SignOutException {
 
 abstract class _SignOutException implements AuthException {
   const factory _SignOutException() = _$_SignOutException;
+}
+
+/// @nodoc
+abstract class _$$_RefreshTokenCopyWith<$Res> {
+  factory _$$_RefreshTokenCopyWith(
+          _$_RefreshToken value, $Res Function(_$_RefreshToken) then) =
+      __$$_RefreshTokenCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_RefreshTokenCopyWithImpl<$Res>
+    extends _$AuthExceptionCopyWithImpl<$Res>
+    implements _$$_RefreshTokenCopyWith<$Res> {
+  __$$_RefreshTokenCopyWithImpl(
+      _$_RefreshToken _value, $Res Function(_$_RefreshToken) _then)
+      : super(_value, (v) => _then(v as _$_RefreshToken));
+
+  @override
+  _$_RefreshToken get _value => super._value as _$_RefreshToken;
+}
+
+/// @nodoc
+
+class _$_RefreshToken implements _RefreshToken {
+  const _$_RefreshToken();
+
+  @override
+  String toString() {
+    return 'AuthException.refreshToken()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_RefreshToken);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() invalidEmailOrPassword,
+    required TResult Function() pendingEmailVerification,
+    required TResult Function() emailPasswordSignIn,
+    required TResult Function() missingSignInBodyParams,
+    required TResult Function() emailPasswordSignUp,
+    required TResult Function() missingSignUpBodyParams,
+    required TResult Function() invalidEmailFormat,
+    required TResult Function() invalidPasswordFormat,
+    required TResult Function() userExists,
+    required TResult Function() signOutException,
+    required TResult Function() refreshToken,
+    required TResult Function() timedout,
+    required TResult Function() unauthorized,
+  }) {
+    return refreshToken();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? invalidEmailOrPassword,
+    TResult Function()? pendingEmailVerification,
+    TResult Function()? emailPasswordSignIn,
+    TResult Function()? missingSignInBodyParams,
+    TResult Function()? emailPasswordSignUp,
+    TResult Function()? missingSignUpBodyParams,
+    TResult Function()? invalidEmailFormat,
+    TResult Function()? invalidPasswordFormat,
+    TResult Function()? userExists,
+    TResult Function()? signOutException,
+    TResult Function()? refreshToken,
+    TResult Function()? timedout,
+    TResult Function()? unauthorized,
+  }) {
+    return refreshToken?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? invalidEmailOrPassword,
+    TResult Function()? pendingEmailVerification,
+    TResult Function()? emailPasswordSignIn,
+    TResult Function()? missingSignInBodyParams,
+    TResult Function()? emailPasswordSignUp,
+    TResult Function()? missingSignUpBodyParams,
+    TResult Function()? invalidEmailFormat,
+    TResult Function()? invalidPasswordFormat,
+    TResult Function()? userExists,
+    TResult Function()? signOutException,
+    TResult Function()? refreshToken,
+    TResult Function()? timedout,
+    TResult Function()? unauthorized,
+    required TResult orElse(),
+  }) {
+    if (refreshToken != null) {
+      return refreshToken();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InvalidEmailOrPassword value)
+        invalidEmailOrPassword,
+    required TResult Function(_PendingEmailVerification value)
+        pendingEmailVerification,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
+    required TResult Function(_MissingSignInBodyParams value)
+        missingSignInBodyParams,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
+    required TResult Function(_MissingSignUpBodyParams value)
+        missingSignUpBodyParams,
+    required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
+    required TResult Function(_InvalidPasswordFormat value)
+        invalidPasswordFormat,
+    required TResult Function(_UserExists value) userExists,
+    required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
+    required TResult Function(_TimedOut value) timedout,
+    required TResult Function(_Unauthorized value) unauthorized,
+  }) {
+    return refreshToken(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
+    TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
+    TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
+    TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
+    TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
+    TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
+    TResult Function(_UserExists value)? userExists,
+    TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
+    TResult Function(_TimedOut value)? timedout,
+    TResult Function(_Unauthorized value)? unauthorized,
+  }) {
+    return refreshToken?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
+    TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
+    TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
+    TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
+    TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
+    TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
+    TResult Function(_UserExists value)? userExists,
+    TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
+    TResult Function(_TimedOut value)? timedout,
+    TResult Function(_Unauthorized value)? unauthorized,
+    required TResult orElse(),
+  }) {
+    if (refreshToken != null) {
+      return refreshToken(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _RefreshToken implements AuthException {
+  const factory _RefreshToken() = _$_RefreshToken;
 }
 
 /// @nodoc
@@ -1966,14 +2132,15 @@ class _$_TimedOut implements _TimedOut {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
@@ -1985,14 +2152,15 @@ class _$_TimedOut implements _TimedOut {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
@@ -2004,14 +2172,15 @@ class _$_TimedOut implements _TimedOut {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -2029,12 +2198,10 @@ class _$_TimedOut implements _TimedOut {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -2042,6 +2209,7 @@ class _$_TimedOut implements _TimedOut {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
@@ -2053,16 +2221,15 @@ class _$_TimedOut implements _TimedOut {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
@@ -2074,16 +2241,15 @@ class _$_TimedOut implements _TimedOut {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),
@@ -2142,14 +2308,15 @@ class _$_Unauthorized implements _Unauthorized {
   TResult when<TResult extends Object?>({
     required TResult Function() invalidEmailOrPassword,
     required TResult Function() pendingEmailVerification,
-    required TResult Function() emailPasswordSignInException,
+    required TResult Function() emailPasswordSignIn,
     required TResult Function() missingSignInBodyParams,
-    required TResult Function() emailPasswordSignUpException,
+    required TResult Function() emailPasswordSignUp,
     required TResult Function() missingSignUpBodyParams,
     required TResult Function() invalidEmailFormat,
     required TResult Function() invalidPasswordFormat,
     required TResult Function() userExists,
     required TResult Function() signOutException,
+    required TResult Function() refreshToken,
     required TResult Function() timedout,
     required TResult Function() unauthorized,
   }) {
@@ -2161,14 +2328,15 @@ class _$_Unauthorized implements _Unauthorized {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
   }) {
@@ -2180,14 +2348,15 @@ class _$_Unauthorized implements _Unauthorized {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? invalidEmailOrPassword,
     TResult Function()? pendingEmailVerification,
-    TResult Function()? emailPasswordSignInException,
+    TResult Function()? emailPasswordSignIn,
     TResult Function()? missingSignInBodyParams,
-    TResult Function()? emailPasswordSignUpException,
+    TResult Function()? emailPasswordSignUp,
     TResult Function()? missingSignUpBodyParams,
     TResult Function()? invalidEmailFormat,
     TResult Function()? invalidPasswordFormat,
     TResult Function()? userExists,
     TResult Function()? signOutException,
+    TResult Function()? refreshToken,
     TResult Function()? timedout,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -2205,12 +2374,10 @@ class _$_Unauthorized implements _Unauthorized {
         invalidEmailOrPassword,
     required TResult Function(_PendingEmailVerification value)
         pendingEmailVerification,
-    required TResult Function(_EmailPasswordSignInException value)
-        emailPasswordSignInException,
+    required TResult Function(_EmailPasswordSignIn value) emailPasswordSignIn,
     required TResult Function(_MissingSignInBodyParams value)
         missingSignInBodyParams,
-    required TResult Function(_EmailPasswordSignUpException value)
-        emailPasswordSignUpException,
+    required TResult Function(_EmailPasswordSignUp value) emailPasswordSignUp,
     required TResult Function(_MissingSignUpBodyParams value)
         missingSignUpBodyParams,
     required TResult Function(_InvalidEmailFormat value) invalidEmailFormat,
@@ -2218,6 +2385,7 @@ class _$_Unauthorized implements _Unauthorized {
         invalidPasswordFormat,
     required TResult Function(_UserExists value) userExists,
     required TResult Function(_SignOutException value) signOutException,
+    required TResult Function(_RefreshToken value) refreshToken,
     required TResult Function(_TimedOut value) timedout,
     required TResult Function(_Unauthorized value) unauthorized,
   }) {
@@ -2229,16 +2397,15 @@ class _$_Unauthorized implements _Unauthorized {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
   }) {
@@ -2250,16 +2417,15 @@ class _$_Unauthorized implements _Unauthorized {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_InvalidEmailOrPassword value)? invalidEmailOrPassword,
     TResult Function(_PendingEmailVerification value)? pendingEmailVerification,
-    TResult Function(_EmailPasswordSignInException value)?
-        emailPasswordSignInException,
+    TResult Function(_EmailPasswordSignIn value)? emailPasswordSignIn,
     TResult Function(_MissingSignInBodyParams value)? missingSignInBodyParams,
-    TResult Function(_EmailPasswordSignUpException value)?
-        emailPasswordSignUpException,
+    TResult Function(_EmailPasswordSignUp value)? emailPasswordSignUp,
     TResult Function(_MissingSignUpBodyParams value)? missingSignUpBodyParams,
     TResult Function(_InvalidEmailFormat value)? invalidEmailFormat,
     TResult Function(_InvalidPasswordFormat value)? invalidPasswordFormat,
     TResult Function(_UserExists value)? userExists,
     TResult Function(_SignOutException value)? signOutException,
+    TResult Function(_RefreshToken value)? refreshToken,
     TResult Function(_TimedOut value)? timedout,
     TResult Function(_Unauthorized value)? unauthorized,
     required TResult orElse(),

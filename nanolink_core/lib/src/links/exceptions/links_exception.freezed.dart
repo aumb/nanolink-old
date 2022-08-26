@@ -18,97 +18,89 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$LinksException {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),
@@ -134,38 +126,37 @@ class _$LinksExceptionCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$$_GetLinksExceptionCopyWith<$Res> {
-  factory _$$_GetLinksExceptionCopyWith(_$_GetLinksException value,
-          $Res Function(_$_GetLinksException) then) =
-      __$$_GetLinksExceptionCopyWithImpl<$Res>;
+abstract class _$$_GetLinksCopyWith<$Res> {
+  factory _$$_GetLinksCopyWith(
+          _$_GetLinks value, $Res Function(_$_GetLinks) then) =
+      __$$_GetLinksCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetLinksExceptionCopyWithImpl<$Res>
-    extends _$LinksExceptionCopyWithImpl<$Res>
-    implements _$$_GetLinksExceptionCopyWith<$Res> {
-  __$$_GetLinksExceptionCopyWithImpl(
-      _$_GetLinksException _value, $Res Function(_$_GetLinksException) _then)
-      : super(_value, (v) => _then(v as _$_GetLinksException));
+class __$$_GetLinksCopyWithImpl<$Res> extends _$LinksExceptionCopyWithImpl<$Res>
+    implements _$$_GetLinksCopyWith<$Res> {
+  __$$_GetLinksCopyWithImpl(
+      _$_GetLinks _value, $Res Function(_$_GetLinks) _then)
+      : super(_value, (v) => _then(v as _$_GetLinks));
 
   @override
-  _$_GetLinksException get _value => super._value as _$_GetLinksException;
+  _$_GetLinks get _value => super._value as _$_GetLinks;
 }
 
 /// @nodoc
 
-class _$_GetLinksException implements _GetLinksException {
-  const _$_GetLinksException();
+class _$_GetLinks implements _GetLinks {
+  const _$_GetLinks();
 
   @override
   String toString() {
-    return 'LinksException.getLinksException()';
+    return 'LinksException.getLinks()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetLinksException);
+        (other.runtimeType == runtimeType && other is _$_GetLinks);
   }
 
   @override
@@ -174,54 +165,54 @@ class _$_GetLinksException implements _GetLinksException {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) {
-    return getLinksException();
+    return getLinks();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) {
-    return getLinksException?.call();
+    return getLinks?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (getLinksException != null) {
-      return getLinksException();
+    if (getLinks != null) {
+      return getLinks();
     }
     return orElse();
   }
@@ -229,113 +220,100 @@ class _$_GetLinksException implements _GetLinksException {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) {
-    return getLinksException(this);
+    return getLinks(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) {
-    return getLinksException?.call(this);
+    return getLinks?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (getLinksException != null) {
-      return getLinksException(this);
+    if (getLinks != null) {
+      return getLinks(this);
     }
     return orElse();
   }
 }
 
-abstract class _GetLinksException implements LinksException {
-  const factory _GetLinksException() = _$_GetLinksException;
+abstract class _GetLinks implements LinksException {
+  const factory _GetLinks() = _$_GetLinks;
 }
 
 /// @nodoc
-abstract class _$$_LinksDeserializationExceptionCopyWith<$Res> {
-  factory _$$_LinksDeserializationExceptionCopyWith(
-          _$_LinksDeserializationException value,
-          $Res Function(_$_LinksDeserializationException) then) =
-      __$$_LinksDeserializationExceptionCopyWithImpl<$Res>;
+abstract class _$$_LinksDeserializationCopyWith<$Res> {
+  factory _$$_LinksDeserializationCopyWith(_$_LinksDeserialization value,
+          $Res Function(_$_LinksDeserialization) then) =
+      __$$_LinksDeserializationCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LinksDeserializationExceptionCopyWithImpl<$Res>
+class __$$_LinksDeserializationCopyWithImpl<$Res>
     extends _$LinksExceptionCopyWithImpl<$Res>
-    implements _$$_LinksDeserializationExceptionCopyWith<$Res> {
-  __$$_LinksDeserializationExceptionCopyWithImpl(
-      _$_LinksDeserializationException _value,
-      $Res Function(_$_LinksDeserializationException) _then)
-      : super(_value, (v) => _then(v as _$_LinksDeserializationException));
+    implements _$$_LinksDeserializationCopyWith<$Res> {
+  __$$_LinksDeserializationCopyWithImpl(_$_LinksDeserialization _value,
+      $Res Function(_$_LinksDeserialization) _then)
+      : super(_value, (v) => _then(v as _$_LinksDeserialization));
 
   @override
-  _$_LinksDeserializationException get _value =>
-      super._value as _$_LinksDeserializationException;
+  _$_LinksDeserialization get _value => super._value as _$_LinksDeserialization;
 }
 
 /// @nodoc
 
-class _$_LinksDeserializationException
-    implements _LinksDeserializationException {
-  const _$_LinksDeserializationException();
+class _$_LinksDeserialization implements _LinksDeserialization {
+  const _$_LinksDeserialization();
 
   @override
   String toString() {
-    return 'LinksException.linksDeserializationException()';
+    return 'LinksException.linksDeserialization()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_LinksDeserializationException);
+        (other.runtimeType == runtimeType && other is _$_LinksDeserialization);
   }
 
   @override
@@ -344,54 +322,54 @@ class _$_LinksDeserializationException
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) {
-    return linksDeserializationException();
+    return linksDeserialization();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) {
-    return linksDeserializationException?.call();
+    return linksDeserialization?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (linksDeserializationException != null) {
-      return linksDeserializationException();
+    if (linksDeserialization != null) {
+      return linksDeserialization();
     }
     return orElse();
   }
@@ -399,109 +377,98 @@ class _$_LinksDeserializationException
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) {
-    return linksDeserializationException(this);
+    return linksDeserialization(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) {
-    return linksDeserializationException?.call(this);
+    return linksDeserialization?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (linksDeserializationException != null) {
-      return linksDeserializationException(this);
+    if (linksDeserialization != null) {
+      return linksDeserialization(this);
     }
     return orElse();
   }
 }
 
-abstract class _LinksDeserializationException implements LinksException {
-  const factory _LinksDeserializationException() =
-      _$_LinksDeserializationException;
+abstract class _LinksDeserialization implements LinksException {
+  const factory _LinksDeserialization() = _$_LinksDeserialization;
 }
 
 /// @nodoc
-abstract class _$$_GetLinkExceptionCopyWith<$Res> {
-  factory _$$_GetLinkExceptionCopyWith(
-          _$_GetLinkException value, $Res Function(_$_GetLinkException) then) =
-      __$$_GetLinkExceptionCopyWithImpl<$Res>;
+abstract class _$$_GetLinkCopyWith<$Res> {
+  factory _$$_GetLinkCopyWith(
+          _$_GetLink value, $Res Function(_$_GetLink) then) =
+      __$$_GetLinkCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetLinkExceptionCopyWithImpl<$Res>
-    extends _$LinksExceptionCopyWithImpl<$Res>
-    implements _$$_GetLinkExceptionCopyWith<$Res> {
-  __$$_GetLinkExceptionCopyWithImpl(
-      _$_GetLinkException _value, $Res Function(_$_GetLinkException) _then)
-      : super(_value, (v) => _then(v as _$_GetLinkException));
+class __$$_GetLinkCopyWithImpl<$Res> extends _$LinksExceptionCopyWithImpl<$Res>
+    implements _$$_GetLinkCopyWith<$Res> {
+  __$$_GetLinkCopyWithImpl(_$_GetLink _value, $Res Function(_$_GetLink) _then)
+      : super(_value, (v) => _then(v as _$_GetLink));
 
   @override
-  _$_GetLinkException get _value => super._value as _$_GetLinkException;
+  _$_GetLink get _value => super._value as _$_GetLink;
 }
 
 /// @nodoc
 
-class _$_GetLinkException implements _GetLinkException {
-  const _$_GetLinkException();
+class _$_GetLink implements _GetLink {
+  const _$_GetLink();
 
   @override
   String toString() {
-    return 'LinksException.getLinkException()';
+    return 'LinksException.getLink()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetLinkException);
+        (other.runtimeType == runtimeType && other is _$_GetLink);
   }
 
   @override
@@ -510,54 +477,54 @@ class _$_GetLinkException implements _GetLinkException {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) {
-    return getLinkException();
+    return getLink();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) {
-    return getLinkException?.call();
+    return getLink?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (getLinkException != null) {
-      return getLinkException();
+    if (getLink != null) {
+      return getLink();
     }
     return orElse();
   }
@@ -565,108 +532,100 @@ class _$_GetLinkException implements _GetLinkException {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) {
-    return getLinkException(this);
+    return getLink(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) {
-    return getLinkException?.call(this);
+    return getLink?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (getLinkException != null) {
-      return getLinkException(this);
+    if (getLink != null) {
+      return getLink(this);
     }
     return orElse();
   }
 }
 
-abstract class _GetLinkException implements LinksException {
-  const factory _GetLinkException() = _$_GetLinkException;
+abstract class _GetLink implements LinksException {
+  const factory _GetLink() = _$_GetLink;
 }
 
 /// @nodoc
-abstract class _$$_UpdateLinkExceptionCopyWith<$Res> {
-  factory _$$_UpdateLinkExceptionCopyWith(_$_UpdateLinkException value,
-          $Res Function(_$_UpdateLinkException) then) =
-      __$$_UpdateLinkExceptionCopyWithImpl<$Res>;
+abstract class _$$_UpdateLinkCopyWith<$Res> {
+  factory _$$_UpdateLinkCopyWith(
+          _$_UpdateLink value, $Res Function(_$_UpdateLink) then) =
+      __$$_UpdateLinkCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_UpdateLinkExceptionCopyWithImpl<$Res>
+class __$$_UpdateLinkCopyWithImpl<$Res>
     extends _$LinksExceptionCopyWithImpl<$Res>
-    implements _$$_UpdateLinkExceptionCopyWith<$Res> {
-  __$$_UpdateLinkExceptionCopyWithImpl(_$_UpdateLinkException _value,
-      $Res Function(_$_UpdateLinkException) _then)
-      : super(_value, (v) => _then(v as _$_UpdateLinkException));
+    implements _$$_UpdateLinkCopyWith<$Res> {
+  __$$_UpdateLinkCopyWithImpl(
+      _$_UpdateLink _value, $Res Function(_$_UpdateLink) _then)
+      : super(_value, (v) => _then(v as _$_UpdateLink));
 
   @override
-  _$_UpdateLinkException get _value => super._value as _$_UpdateLinkException;
+  _$_UpdateLink get _value => super._value as _$_UpdateLink;
 }
 
 /// @nodoc
 
-class _$_UpdateLinkException implements _UpdateLinkException {
-  const _$_UpdateLinkException();
+class _$_UpdateLink implements _UpdateLink {
+  const _$_UpdateLink();
 
   @override
   String toString() {
-    return 'LinksException.updateLinkException()';
+    return 'LinksException.updateLink()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_UpdateLinkException);
+        (other.runtimeType == runtimeType && other is _$_UpdateLink);
   }
 
   @override
@@ -675,54 +634,54 @@ class _$_UpdateLinkException implements _UpdateLinkException {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) {
-    return updateLinkException();
+    return updateLink();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) {
-    return updateLinkException?.call();
+    return updateLink?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (updateLinkException != null) {
-      return updateLinkException();
+    if (updateLink != null) {
+      return updateLink();
     }
     return orElse();
   }
@@ -730,108 +689,100 @@ class _$_UpdateLinkException implements _UpdateLinkException {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) {
-    return updateLinkException(this);
+    return updateLink(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) {
-    return updateLinkException?.call(this);
+    return updateLink?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (updateLinkException != null) {
-      return updateLinkException(this);
+    if (updateLink != null) {
+      return updateLink(this);
     }
     return orElse();
   }
 }
 
-abstract class _UpdateLinkException implements LinksException {
-  const factory _UpdateLinkException() = _$_UpdateLinkException;
+abstract class _UpdateLink implements LinksException {
+  const factory _UpdateLink() = _$_UpdateLink;
 }
 
 /// @nodoc
-abstract class _$$_CreateLinkExceptionCopyWith<$Res> {
-  factory _$$_CreateLinkExceptionCopyWith(_$_CreateLinkException value,
-          $Res Function(_$_CreateLinkException) then) =
-      __$$_CreateLinkExceptionCopyWithImpl<$Res>;
+abstract class _$$_CreateLinkCopyWith<$Res> {
+  factory _$$_CreateLinkCopyWith(
+          _$_CreateLink value, $Res Function(_$_CreateLink) then) =
+      __$$_CreateLinkCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_CreateLinkExceptionCopyWithImpl<$Res>
+class __$$_CreateLinkCopyWithImpl<$Res>
     extends _$LinksExceptionCopyWithImpl<$Res>
-    implements _$$_CreateLinkExceptionCopyWith<$Res> {
-  __$$_CreateLinkExceptionCopyWithImpl(_$_CreateLinkException _value,
-      $Res Function(_$_CreateLinkException) _then)
-      : super(_value, (v) => _then(v as _$_CreateLinkException));
+    implements _$$_CreateLinkCopyWith<$Res> {
+  __$$_CreateLinkCopyWithImpl(
+      _$_CreateLink _value, $Res Function(_$_CreateLink) _then)
+      : super(_value, (v) => _then(v as _$_CreateLink));
 
   @override
-  _$_CreateLinkException get _value => super._value as _$_CreateLinkException;
+  _$_CreateLink get _value => super._value as _$_CreateLink;
 }
 
 /// @nodoc
 
-class _$_CreateLinkException implements _CreateLinkException {
-  const _$_CreateLinkException();
+class _$_CreateLink implements _CreateLink {
+  const _$_CreateLink();
 
   @override
   String toString() {
-    return 'LinksException.createLinkException()';
+    return 'LinksException.createLink()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_CreateLinkException);
+        (other.runtimeType == runtimeType && other is _$_CreateLink);
   }
 
   @override
@@ -840,54 +791,54 @@ class _$_CreateLinkException implements _CreateLinkException {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) {
-    return createLinkException();
+    return createLink();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) {
-    return createLinkException?.call();
+    return createLink?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (createLinkException != null) {
-      return createLinkException();
+    if (createLink != null) {
+      return createLink();
     }
     return orElse();
   }
@@ -895,108 +846,100 @@ class _$_CreateLinkException implements _CreateLinkException {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) {
-    return createLinkException(this);
+    return createLink(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) {
-    return createLinkException?.call(this);
+    return createLink?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (createLinkException != null) {
-      return createLinkException(this);
+    if (createLink != null) {
+      return createLink(this);
     }
     return orElse();
   }
 }
 
-abstract class _CreateLinkException implements LinksException {
-  const factory _CreateLinkException() = _$_CreateLinkException;
+abstract class _CreateLink implements LinksException {
+  const factory _CreateLink() = _$_CreateLink;
 }
 
 /// @nodoc
-abstract class _$$_DeleteLinkExceptionCopyWith<$Res> {
-  factory _$$_DeleteLinkExceptionCopyWith(_$_DeleteLinkException value,
-          $Res Function(_$_DeleteLinkException) then) =
-      __$$_DeleteLinkExceptionCopyWithImpl<$Res>;
+abstract class _$$_DeleteLinkCopyWith<$Res> {
+  factory _$$_DeleteLinkCopyWith(
+          _$_DeleteLink value, $Res Function(_$_DeleteLink) then) =
+      __$$_DeleteLinkCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_DeleteLinkExceptionCopyWithImpl<$Res>
+class __$$_DeleteLinkCopyWithImpl<$Res>
     extends _$LinksExceptionCopyWithImpl<$Res>
-    implements _$$_DeleteLinkExceptionCopyWith<$Res> {
-  __$$_DeleteLinkExceptionCopyWithImpl(_$_DeleteLinkException _value,
-      $Res Function(_$_DeleteLinkException) _then)
-      : super(_value, (v) => _then(v as _$_DeleteLinkException));
+    implements _$$_DeleteLinkCopyWith<$Res> {
+  __$$_DeleteLinkCopyWithImpl(
+      _$_DeleteLink _value, $Res Function(_$_DeleteLink) _then)
+      : super(_value, (v) => _then(v as _$_DeleteLink));
 
   @override
-  _$_DeleteLinkException get _value => super._value as _$_DeleteLinkException;
+  _$_DeleteLink get _value => super._value as _$_DeleteLink;
 }
 
 /// @nodoc
 
-class _$_DeleteLinkException implements _DeleteLinkException {
-  const _$_DeleteLinkException();
+class _$_DeleteLink implements _DeleteLink {
+  const _$_DeleteLink();
 
   @override
   String toString() {
-    return 'LinksException.deleteLinkException()';
+    return 'LinksException.deleteLink()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DeleteLinkException);
+        (other.runtimeType == runtimeType && other is _$_DeleteLink);
   }
 
   @override
@@ -1005,54 +948,54 @@ class _$_DeleteLinkException implements _DeleteLinkException {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) {
-    return deleteLinkException();
+    return deleteLink();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) {
-    return deleteLinkException?.call();
+    return deleteLink?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (deleteLinkException != null) {
-      return deleteLinkException();
+    if (deleteLink != null) {
+      return deleteLink();
     }
     return orElse();
   }
@@ -1060,112 +1003,100 @@ class _$_DeleteLinkException implements _DeleteLinkException {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) {
-    return deleteLinkException(this);
+    return deleteLink(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) {
-    return deleteLinkException?.call(this);
+    return deleteLink?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (deleteLinkException != null) {
-      return deleteLinkException(this);
+    if (deleteLink != null) {
+      return deleteLink(this);
     }
     return orElse();
   }
 }
 
-abstract class _DeleteLinkException implements LinksException {
-  const factory _DeleteLinkException() = _$_DeleteLinkException;
+abstract class _DeleteLink implements LinksException {
+  const factory _DeleteLink() = _$_DeleteLink;
 }
 
 /// @nodoc
-abstract class _$$_LinkDoesNotExistExceptionCopyWith<$Res> {
-  factory _$$_LinkDoesNotExistExceptionCopyWith(
-          _$_LinkDoesNotExistException value,
-          $Res Function(_$_LinkDoesNotExistException) then) =
-      __$$_LinkDoesNotExistExceptionCopyWithImpl<$Res>;
+abstract class _$$_LinkDoesNotExistCopyWith<$Res> {
+  factory _$$_LinkDoesNotExistCopyWith(
+          _$_LinkDoesNotExist value, $Res Function(_$_LinkDoesNotExist) then) =
+      __$$_LinkDoesNotExistCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LinkDoesNotExistExceptionCopyWithImpl<$Res>
+class __$$_LinkDoesNotExistCopyWithImpl<$Res>
     extends _$LinksExceptionCopyWithImpl<$Res>
-    implements _$$_LinkDoesNotExistExceptionCopyWith<$Res> {
-  __$$_LinkDoesNotExistExceptionCopyWithImpl(
-      _$_LinkDoesNotExistException _value,
-      $Res Function(_$_LinkDoesNotExistException) _then)
-      : super(_value, (v) => _then(v as _$_LinkDoesNotExistException));
+    implements _$$_LinkDoesNotExistCopyWith<$Res> {
+  __$$_LinkDoesNotExistCopyWithImpl(
+      _$_LinkDoesNotExist _value, $Res Function(_$_LinkDoesNotExist) _then)
+      : super(_value, (v) => _then(v as _$_LinkDoesNotExist));
 
   @override
-  _$_LinkDoesNotExistException get _value =>
-      super._value as _$_LinkDoesNotExistException;
+  _$_LinkDoesNotExist get _value => super._value as _$_LinkDoesNotExist;
 }
 
 /// @nodoc
 
-class _$_LinkDoesNotExistException implements _LinkDoesNotExistException {
-  const _$_LinkDoesNotExistException();
+class _$_LinkDoesNotExist implements _LinkDoesNotExist {
+  const _$_LinkDoesNotExist();
 
   @override
   String toString() {
-    return 'LinksException.linkDoesNotExistException()';
+    return 'LinksException.linkDoesNotExist()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_LinkDoesNotExistException);
+        (other.runtimeType == runtimeType && other is _$_LinkDoesNotExist);
   }
 
   @override
@@ -1174,54 +1105,54 @@ class _$_LinkDoesNotExistException implements _LinkDoesNotExistException {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) {
-    return linkDoesNotExistException();
+    return linkDoesNotExist();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) {
-    return linkDoesNotExistException?.call();
+    return linkDoesNotExist?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (linkDoesNotExistException != null) {
-      return linkDoesNotExistException();
+    if (linkDoesNotExist != null) {
+      return linkDoesNotExist();
     }
     return orElse();
   }
@@ -1229,73 +1160,65 @@ class _$_LinkDoesNotExistException implements _LinkDoesNotExistException {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) {
-    return linkDoesNotExistException(this);
+    return linkDoesNotExist(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) {
-    return linkDoesNotExistException?.call(this);
+    return linkDoesNotExist?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (linkDoesNotExistException != null) {
-      return linkDoesNotExistException(this);
+    if (linkDoesNotExist != null) {
+      return linkDoesNotExist(this);
     }
     return orElse();
   }
 }
 
-abstract class _LinkDoesNotExistException implements LinksException {
-  const factory _LinkDoesNotExistException() = _$_LinkDoesNotExistException;
+abstract class _LinkDoesNotExist implements LinksException {
+  const factory _LinkDoesNotExist() = _$_LinkDoesNotExist;
 }
 
 /// @nodoc
@@ -1327,7 +1250,7 @@ class _$_LinkDeserializationException implements _LinkDeserializationException {
 
   @override
   String toString() {
-    return 'LinksException.linkDeserializationException()';
+    return 'LinksException.linkDeserialization()';
   }
 
   @override
@@ -1343,54 +1266,54 @@ class _$_LinkDeserializationException implements _LinkDeserializationException {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) {
-    return linkDeserializationException();
+    return linkDeserialization();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) {
-    return linkDeserializationException?.call();
+    return linkDeserialization?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (linkDeserializationException != null) {
-      return linkDeserializationException();
+    if (linkDeserialization != null) {
+      return linkDeserialization();
     }
     return orElse();
   }
@@ -1398,66 +1321,58 @@ class _$_LinkDeserializationException implements _LinkDeserializationException {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) {
-    return linkDeserializationException(this);
+    return linkDeserialization(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) {
-    return linkDeserializationException?.call(this);
+    return linkDeserialization?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (linkDeserializationException != null) {
-      return linkDeserializationException(this);
+    if (linkDeserialization != null) {
+      return linkDeserialization(this);
     }
     return orElse();
   }
@@ -1469,38 +1384,38 @@ abstract class _LinkDeserializationException implements LinksException {
 }
 
 /// @nodoc
-abstract class _$$_LinkUnsafeExceptionCopyWith<$Res> {
-  factory _$$_LinkUnsafeExceptionCopyWith(_$_LinkUnsafeException value,
-          $Res Function(_$_LinkUnsafeException) then) =
-      __$$_LinkUnsafeExceptionCopyWithImpl<$Res>;
+abstract class _$$_LinkUnsafeCopyWith<$Res> {
+  factory _$$_LinkUnsafeCopyWith(
+          _$_LinkUnsafe value, $Res Function(_$_LinkUnsafe) then) =
+      __$$_LinkUnsafeCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LinkUnsafeExceptionCopyWithImpl<$Res>
+class __$$_LinkUnsafeCopyWithImpl<$Res>
     extends _$LinksExceptionCopyWithImpl<$Res>
-    implements _$$_LinkUnsafeExceptionCopyWith<$Res> {
-  __$$_LinkUnsafeExceptionCopyWithImpl(_$_LinkUnsafeException _value,
-      $Res Function(_$_LinkUnsafeException) _then)
-      : super(_value, (v) => _then(v as _$_LinkUnsafeException));
+    implements _$$_LinkUnsafeCopyWith<$Res> {
+  __$$_LinkUnsafeCopyWithImpl(
+      _$_LinkUnsafe _value, $Res Function(_$_LinkUnsafe) _then)
+      : super(_value, (v) => _then(v as _$_LinkUnsafe));
 
   @override
-  _$_LinkUnsafeException get _value => super._value as _$_LinkUnsafeException;
+  _$_LinkUnsafe get _value => super._value as _$_LinkUnsafe;
 }
 
 /// @nodoc
 
-class _$_LinkUnsafeException implements _LinkUnsafeException {
-  const _$_LinkUnsafeException();
+class _$_LinkUnsafe implements _LinkUnsafe {
+  const _$_LinkUnsafe();
 
   @override
   String toString() {
-    return 'LinksException.linkUnsafeException()';
+    return 'LinksException.linkUnsafe()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_LinkUnsafeException);
+        (other.runtimeType == runtimeType && other is _$_LinkUnsafe);
   }
 
   @override
@@ -1509,54 +1424,54 @@ class _$_LinkUnsafeException implements _LinkUnsafeException {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) {
-    return linkUnsafeException();
+    return linkUnsafe();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) {
-    return linkUnsafeException?.call();
+    return linkUnsafe?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (linkUnsafeException != null) {
-      return linkUnsafeException();
+    if (linkUnsafe != null) {
+      return linkUnsafe();
     }
     return orElse();
   }
@@ -1564,73 +1479,65 @@ class _$_LinkUnsafeException implements _LinkUnsafeException {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) {
-    return linkUnsafeException(this);
+    return linkUnsafe(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) {
-    return linkUnsafeException?.call(this);
+    return linkUnsafe?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
-    if (linkUnsafeException != null) {
-      return linkUnsafeException(this);
+    if (linkUnsafe != null) {
+      return linkUnsafe(this);
     }
     return orElse();
   }
 }
 
-abstract class _LinkUnsafeException implements LinksException {
-  const factory _LinkUnsafeException() = _$_LinkUnsafeException;
+abstract class _LinkUnsafe implements LinksException {
+  const factory _LinkUnsafe() = _$_LinkUnsafe;
 }
 
 /// @nodoc
@@ -1679,15 +1586,15 @@ class _$_LinkMissingOrInvalidBodyParams
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getLinksException,
-    required TResult Function() linksDeserializationException,
-    required TResult Function() getLinkException,
-    required TResult Function() updateLinkException,
-    required TResult Function() createLinkException,
-    required TResult Function() deleteLinkException,
-    required TResult Function() linkDoesNotExistException,
-    required TResult Function() linkDeserializationException,
-    required TResult Function() linkUnsafeException,
+    required TResult Function() getLinks,
+    required TResult Function() linksDeserialization,
+    required TResult Function() getLink,
+    required TResult Function() updateLink,
+    required TResult Function() createLink,
+    required TResult Function() deleteLink,
+    required TResult Function() linkDoesNotExist,
+    required TResult Function() linkDeserialization,
+    required TResult Function() linkUnsafe,
     required TResult Function() linkMissingOrInvalidBodyParams,
   }) {
     return linkMissingOrInvalidBodyParams();
@@ -1696,15 +1603,15 @@ class _$_LinkMissingOrInvalidBodyParams
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
   }) {
     return linkMissingOrInvalidBodyParams?.call();
@@ -1713,15 +1620,15 @@ class _$_LinkMissingOrInvalidBodyParams
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getLinksException,
-    TResult Function()? linksDeserializationException,
-    TResult Function()? getLinkException,
-    TResult Function()? updateLinkException,
-    TResult Function()? createLinkException,
-    TResult Function()? deleteLinkException,
-    TResult Function()? linkDoesNotExistException,
-    TResult Function()? linkDeserializationException,
-    TResult Function()? linkUnsafeException,
+    TResult Function()? getLinks,
+    TResult Function()? linksDeserialization,
+    TResult Function()? getLink,
+    TResult Function()? updateLink,
+    TResult Function()? createLink,
+    TResult Function()? deleteLink,
+    TResult Function()? linkDoesNotExist,
+    TResult Function()? linkDeserialization,
+    TResult Function()? linkUnsafe,
     TResult Function()? linkMissingOrInvalidBodyParams,
     required TResult orElse(),
   }) {
@@ -1734,18 +1641,16 @@ class _$_LinkMissingOrInvalidBodyParams
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetLinksException value) getLinksException,
-    required TResult Function(_LinksDeserializationException value)
-        linksDeserializationException,
-    required TResult Function(_GetLinkException value) getLinkException,
-    required TResult Function(_UpdateLinkException value) updateLinkException,
-    required TResult Function(_CreateLinkException value) createLinkException,
-    required TResult Function(_DeleteLinkException value) deleteLinkException,
-    required TResult Function(_LinkDoesNotExistException value)
-        linkDoesNotExistException,
+    required TResult Function(_GetLinks value) getLinks,
+    required TResult Function(_LinksDeserialization value) linksDeserialization,
+    required TResult Function(_GetLink value) getLink,
+    required TResult Function(_UpdateLink value) updateLink,
+    required TResult Function(_CreateLink value) createLink,
+    required TResult Function(_DeleteLink value) deleteLink,
+    required TResult Function(_LinkDoesNotExist value) linkDoesNotExist,
     required TResult Function(_LinkDeserializationException value)
-        linkDeserializationException,
-    required TResult Function(_LinkUnsafeException value) linkUnsafeException,
+        linkDeserialization,
+    required TResult Function(_LinkUnsafe value) linkUnsafe,
     required TResult Function(_LinkMissingOrInvalidBodyParams value)
         linkMissingOrInvalidBodyParams,
   }) {
@@ -1755,18 +1660,15 @@ class _$_LinkMissingOrInvalidBodyParams
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
   }) {
@@ -1776,18 +1678,15 @@ class _$_LinkMissingOrInvalidBodyParams
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetLinksException value)? getLinksException,
-    TResult Function(_LinksDeserializationException value)?
-        linksDeserializationException,
-    TResult Function(_GetLinkException value)? getLinkException,
-    TResult Function(_UpdateLinkException value)? updateLinkException,
-    TResult Function(_CreateLinkException value)? createLinkException,
-    TResult Function(_DeleteLinkException value)? deleteLinkException,
-    TResult Function(_LinkDoesNotExistException value)?
-        linkDoesNotExistException,
-    TResult Function(_LinkDeserializationException value)?
-        linkDeserializationException,
-    TResult Function(_LinkUnsafeException value)? linkUnsafeException,
+    TResult Function(_GetLinks value)? getLinks,
+    TResult Function(_LinksDeserialization value)? linksDeserialization,
+    TResult Function(_GetLink value)? getLink,
+    TResult Function(_UpdateLink value)? updateLink,
+    TResult Function(_CreateLink value)? createLink,
+    TResult Function(_DeleteLink value)? deleteLink,
+    TResult Function(_LinkDoesNotExist value)? linkDoesNotExist,
+    TResult Function(_LinkDeserializationException value)? linkDeserialization,
+    TResult Function(_LinkUnsafe value)? linkUnsafe,
     TResult Function(_LinkMissingOrInvalidBodyParams value)?
         linkMissingOrInvalidBodyParams,
     required TResult orElse(),

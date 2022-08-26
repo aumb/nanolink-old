@@ -34,17 +34,17 @@ mixin _$UserException {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetUserException value) doesNotExist,
+    required TResult Function(_DoesNotExist value) doesNotExist,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetUserException value)? doesNotExist,
+    TResult Function(_DoesNotExist value)? doesNotExist,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetUserException value)? doesNotExist,
+    TResult Function(_DoesNotExist value)? doesNotExist,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -68,28 +68,28 @@ class _$UserExceptionCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$$_GetUserExceptionCopyWith<$Res> {
-  factory _$$_GetUserExceptionCopyWith(
-          _$_GetUserException value, $Res Function(_$_GetUserException) then) =
-      __$$_GetUserExceptionCopyWithImpl<$Res>;
+abstract class _$$_DoesNotExistCopyWith<$Res> {
+  factory _$$_DoesNotExistCopyWith(
+          _$_DoesNotExist value, $Res Function(_$_DoesNotExist) then) =
+      __$$_DoesNotExistCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetUserExceptionCopyWithImpl<$Res>
+class __$$_DoesNotExistCopyWithImpl<$Res>
     extends _$UserExceptionCopyWithImpl<$Res>
-    implements _$$_GetUserExceptionCopyWith<$Res> {
-  __$$_GetUserExceptionCopyWithImpl(
-      _$_GetUserException _value, $Res Function(_$_GetUserException) _then)
-      : super(_value, (v) => _then(v as _$_GetUserException));
+    implements _$$_DoesNotExistCopyWith<$Res> {
+  __$$_DoesNotExistCopyWithImpl(
+      _$_DoesNotExist _value, $Res Function(_$_DoesNotExist) _then)
+      : super(_value, (v) => _then(v as _$_DoesNotExist));
 
   @override
-  _$_GetUserException get _value => super._value as _$_GetUserException;
+  _$_DoesNotExist get _value => super._value as _$_DoesNotExist;
 }
 
 /// @nodoc
 
-class _$_GetUserException implements _GetUserException {
-  const _$_GetUserException();
+class _$_DoesNotExist implements _DoesNotExist {
+  const _$_DoesNotExist();
 
   @override
   String toString() {
@@ -99,7 +99,7 @@ class _$_GetUserException implements _GetUserException {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetUserException);
+        (other.runtimeType == runtimeType && other is _$_DoesNotExist);
   }
 
   @override
@@ -136,7 +136,7 @@ class _$_GetUserException implements _GetUserException {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetUserException value) doesNotExist,
+    required TResult Function(_DoesNotExist value) doesNotExist,
   }) {
     return doesNotExist(this);
   }
@@ -144,7 +144,7 @@ class _$_GetUserException implements _GetUserException {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetUserException value)? doesNotExist,
+    TResult Function(_DoesNotExist value)? doesNotExist,
   }) {
     return doesNotExist?.call(this);
   }
@@ -152,7 +152,7 @@ class _$_GetUserException implements _GetUserException {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetUserException value)? doesNotExist,
+    TResult Function(_DoesNotExist value)? doesNotExist,
     required TResult orElse(),
   }) {
     if (doesNotExist != null) {
@@ -162,6 +162,6 @@ class _$_GetUserException implements _GetUserException {
   }
 }
 
-abstract class _GetUserException implements UserException {
-  const factory _GetUserException() = _$_GetUserException;
+abstract class _DoesNotExist implements UserException {
+  const factory _DoesNotExist() = _$_DoesNotExist;
 }

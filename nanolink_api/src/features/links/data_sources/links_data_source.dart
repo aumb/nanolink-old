@@ -4,17 +4,13 @@ import '../use_cases/links_use_cases.dart';
 
 class LinksDataSourceImpl implements LinksDataSource {
   const LinksDataSourceImpl(
-    this._getLinkUseCase,
     this._createLinkUseCase,
-    this._updateLinkUseCase,
     this._deleteLinkUseCase,
     this._getAllLinksUseCase,
     this._getCurrentUserUseCase,
   );
 
-  final GetLinkUseCase _getLinkUseCase;
   final CreateLinkUseCase _createLinkUseCase;
-  final UpdateLinkUseCase _updateLinkUseCase;
   final DeleteLinkUseCase _deleteLinkUseCase;
   final GetAllLinksUseCase _getAllLinksUseCase;
   final GetCurrentUserUseCase _getCurrentUserUseCase;
@@ -31,22 +27,16 @@ class LinksDataSourceImpl implements LinksDataSource {
   }
 
   @override
-  Future<LinkDto> delete(int id) {
-    return _deleteLinkUseCase.run(id);
+  Future<LinkDto> delete(int id, String jwt) async {
+    final user = await _getCurrentUserUseCase.run(jwt);
+    final link = _deleteLinkUseCase.run(id, user);
+    return link;
   }
 
   @override
-  Future<LinkDto> get(int id) {
-    return _getLinkUseCase.run(id);
-  }
-
-  @override
-  Future<List<LinkDto>> getAll() async {
-    return _getAllLinksUseCase.run();
-  }
-
-  @override
-  Future<LinkDto> update(int id, Map<String, dynamic> linkData) async {
-    return _updateLinkUseCase.run(id, linkData);
+  Future<List<LinkDto>> getAll(String jwt) async {
+    final user = await _getCurrentUserUseCase.run(jwt);
+    final links = _getAllLinksUseCase.run(user);
+    return links;
   }
 }

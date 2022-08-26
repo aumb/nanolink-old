@@ -8,6 +8,7 @@ import '../use_cases/auth_use_cases.dart';
 final _emailAndPasswordSignInUseCase = EmailPasswordSignInUseCase(dbClient);
 final _emailAndPasswordSignUpUseCase = EmailPasswordSignUpUseCase(dbClient);
 final _signOutUseCase = SignOutUseCase(dbClient);
+final _refreshTokenUseCase = RefreshTokenUseCase(dbClient);
 
 Middleware authDataSourceInjector() {
   return provider<AuthDataSource>(
@@ -15,6 +16,7 @@ Middleware authDataSourceInjector() {
       _emailAndPasswordSignInUseCase,
       _emailAndPasswordSignUpUseCase,
       _signOutUseCase,
+      _refreshTokenUseCase,
     ),
   );
 }

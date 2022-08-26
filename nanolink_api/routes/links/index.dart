@@ -26,8 +26,14 @@ FutureOr<Response> onRequest(RequestContext context) async {
 ///--url http://localhost:8080/links
 ///```
 Future<Response> _get(RequestContext context) async {
+  // TODO(aumb): look into middleware per method (GET/POST etc)
+  final jwt = context.authorizationHeader;
+
+  if (jwt == null || jwt.isEmpty) {
+    throw const AuthException.unauthorized();
+  }
   final dataSource = context.read<LinksDataSource>();
-  final links = await dataSource.getAll();
+  final links = await dataSource.getAll(jwt);
 
   return Response.json(body: links);
 }

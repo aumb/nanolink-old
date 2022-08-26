@@ -6,65 +6,71 @@ import '../../../server/handlers/error_handler.dart';
 class AuthErrorHandler with ErrorMixin {
   Response handle(AuthException e) {
     return e.when<Response>(
+      refreshToken: () => errorResponse(
+        const ResponseError(
+          statusCode: 400,
+          code: ErrorCode.refreshTokenError,
+        ),
+      ),
       invalidEmailOrPassword: () => errorResponse(
         const ResponseError(
           statusCode: 400,
-          code: ErrorCode.invalidEmailOrPassword,
+          code: ErrorCode.invalidEmailOrPasswordError,
         ),
       ),
       pendingEmailVerification: () => errorResponse(
         const ResponseError(
           statusCode: 400,
-          code: ErrorCode.pendingEmailVerification,
+          code: ErrorCode.pendingEmailVerificationError,
         ),
       ),
-      emailPasswordSignInException: () => errorResponse(
+      emailPasswordSignIn: () => errorResponse(
         const ResponseError(
           statusCode: 400,
-          code: ErrorCode.emailPasswordSignInException,
+          code: ErrorCode.emailPasswordSignInError,
         ),
       ),
       missingSignInBodyParams: () => errorResponse(
         const ResponseError(
           statusCode: 400,
-          code: ErrorCode.missingOrInvalidBodyParams,
+          code: ErrorCode.missingOrInvalidBodyParamsError,
         ),
       ),
-      emailPasswordSignUpException: () => errorResponse(
+      emailPasswordSignUp: () => errorResponse(
         const ResponseError(
           statusCode: 408,
-          code: ErrorCode.emailPasswordSignUpException,
+          code: ErrorCode.emailPasswordSignUpError,
         ),
       ),
       missingSignUpBodyParams: () => errorResponse(
         const ResponseError(
           statusCode: 400,
-          code: ErrorCode.missingOrInvalidBodyParams,
+          code: ErrorCode.missingOrInvalidBodyParamsError,
         ),
       ),
       invalidEmailFormat: () => errorResponse(
         const ResponseError(
           statusCode: 400,
-          code: ErrorCode.invaldEmailFormat,
+          code: ErrorCode.invaldEmailFormatError,
         ),
       ),
       invalidPasswordFormat: () => errorResponse(
         const ResponseError(
           statusCode: 400,
-          code: ErrorCode.invalidPasswordFormat,
+          code: ErrorCode.invalidPasswordFormatError,
         ),
       ),
       userExists: () => errorResponse(
-        const ResponseError(statusCode: 400, code: ErrorCode.userExists),
+        const ResponseError(statusCode: 400, code: ErrorCode.userExistsError),
       ),
       signOutException: () => errorResponse(
-        const ResponseError(statusCode: 400, code: ErrorCode.signOutException),
+        const ResponseError(statusCode: 400, code: ErrorCode.signOutError),
       ),
       timedout: () => errorResponse(
-        const ResponseError(statusCode: 408, code: ErrorCode.unauthorized),
+        const ResponseError(statusCode: 408, code: ErrorCode.unauthorizedError),
       ),
       unauthorized: () => errorResponse(
-        const ResponseError(statusCode: 401, code: ErrorCode.unauthorized),
+        const ResponseError(statusCode: 401, code: ErrorCode.unauthorizedError),
       ),
     );
   }
