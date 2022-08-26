@@ -11,7 +11,7 @@ final _createLinkUseCase = CreateLinkUseCase(dbClient);
 final _deleteLinkUseCase = DeleteLinkUseCase(dbClient);
 final _getCurrentUserUseCase = GetCurrentUserUseCase(dbClient);
 
-Middleware linksDataSourceInjector() {
+Middleware linksDataSourceInjectorMiddleware() {
   return provider<LinksDataSource>(
     (_) => LinksDataSourceImpl(
       _createLinkUseCase,

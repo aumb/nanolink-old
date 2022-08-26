@@ -10,7 +10,7 @@ final _emailAndPasswordSignUpUseCase = EmailPasswordSignUpUseCase(dbClient);
 final _signOutUseCase = SignOutUseCase(dbClient);
 final _refreshTokenUseCase = RefreshTokenUseCase(dbClient);
 
-Middleware authDataSourceInjector() {
+Middleware authDataSourceInjectorMiddleware() {
   return provider<AuthDataSource>(
     (_) => AuthDataSourceImpl(
       _emailAndPasswordSignInUseCase,

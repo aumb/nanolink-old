@@ -7,7 +7,7 @@ import '../use_cases/get_current_user_use_case.dart';
 
 final _getCurrentUserUseCase = GetCurrentUserUseCase(dbClient);
 
-Middleware userDataSourceInjector() {
+Middleware userDataSourceInjectorMiddleware() {
   return provider<UserDataSource>(
     (_) => UserDataSourceImpl(
       _getCurrentUserUseCase,
