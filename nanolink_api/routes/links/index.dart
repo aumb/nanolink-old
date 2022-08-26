@@ -51,7 +51,7 @@ Future<Response> _create(RequestContext context) async {
     keys: [
       KeyRule<String?>(
         key: 'link',
-        rules: (value) => value?.isNotEmpty ?? false,
+        isValidRules: (value) => value?.isNotEmpty ?? false,
       ),
     ],
   );

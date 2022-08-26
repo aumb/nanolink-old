@@ -34,11 +34,11 @@ Future<Response> _post(RequestContext context) async {
     keys: [
       KeyRule<String?>(
         key: 'email',
-        rules: (value) => value?.isNotEmpty ?? false,
+        isValidRules: (value) => value?.isNotEmpty ?? false,
       ),
       KeyRule<String?>(
         key: 'password',
-        rules: (value) => value?.isNotEmpty ?? false,
+        isValidRules: (value) => value?.isNotEmpty ?? false,
       ),
     ],
   );

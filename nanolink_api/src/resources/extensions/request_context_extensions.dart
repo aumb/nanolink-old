@@ -42,13 +42,13 @@ extension RequestContextX on RequestContext {
 class KeyRule<T> {
   KeyRule({
     required this.key,
-    required this.rules,
+    required this.isValidRules,
   });
 
   final String key;
-  final bool Function(T) rules;
+  final bool Function(T) isValidRules;
 
   bool validate(T value) {
-    return rules(value);
+    return isValidRules(value);
   }
 }
