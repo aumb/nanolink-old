@@ -30,7 +30,7 @@ Future<Response> _post(RequestContext context) async {
     keys: [
       KeyRule<String?>(
         key: 'refresh_token',
-        rules: (value) => value?.isNotEmpty ?? false,
+        isValidRules: (value) => value?.isNotEmpty ?? false,
       ),
     ],
   );
