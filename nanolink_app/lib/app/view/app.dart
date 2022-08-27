@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:nanolink_app/l10n/l10n.dart';
 import 'package:nanolink_app/resources/router/app_router.dart';
+import 'package:nanolink_app/resources/theme/app_theme.dart';
 
 class App extends StatelessWidget {
   const App({
@@ -21,12 +22,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      theme: ThemeData(
-        appBarTheme: const AppBarTheme(color: Color(0xFF13B9FF)),
-        colorScheme: ColorScheme.fromSwatch(
-          accentColor: const Color(0xFF13B9FF),
-        ),
-      ),
+      theme: AppTheme.light,
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
